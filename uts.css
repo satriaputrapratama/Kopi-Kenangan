@@ -56,7 +56,7 @@ section{
 }
 
 .sub-heading{
-    background: url('images/background\ about\ us.jpg') no-repeat;
+    background: url('/Kopi-Kenangan/background\ about\ us.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -313,7 +313,7 @@ section{
 /* home */
 
 .home{
-    background: url(images/background\ image\ kopken.jpg);
+    background: url(/Kopi-Kenangan/background\ image\ kopken.jpg);
     background-size: cover;
     background-position: center;
     min-height: 95vh;
@@ -835,4 +835,65 @@ section{
 
 .footer .credit span{
     color: var(--color);
+}
+
+/* media query*/
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 3rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: #fff;
+        border-radius: .5rem;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home{
+        background-position: left;
+        justify-content: center;
+    }
+
+    .home .content h3{
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
 }
